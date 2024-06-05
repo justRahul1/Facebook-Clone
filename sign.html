@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Sign in</title>
+    <link
+      rel="icon"
+      href="https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/eFZD1KABzRA.png"
+    />
+    <link rel="stylesheet" href="./stylesheets/sign.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./scripts/sign.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Body main container start -->
+    <div class="container">
+      <main>
+        <div class="main">
+
+          <!-- Left section of body start -->
+          <section class="left">
+            <div class="leftImg">
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+                alt="facebook Img"
+              />
+            </div>
+            <p>
+              Facebook helps you connect and share with the people in your life.
+            </p>
+          </section>
+          <!-- Left section of body end -->
+
+          <!-- Right section of body start -->
+          <section class="right">
+            <div class="signFormMain">
+              <form id="signIn">
+                <h1>Sign Up</h1>
+                <h4>It's quick and easy</h4>
+                <i id="eye" class="fa-solid fa-eye-slash"></i>
+                <hr />
+                <div class="username">
+                  <input type="text" id="frstName" placeholder="First name" />
+                  <input type="text" id="surName" placeholder="Surname" />
+                </div>
+                <input type="email" id="email" placeholder="Enter your email" />
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="New password"
+                />
+                <input
+                  type="password"
+                  id="cPassword"
+                  placeholder="Confirm password"
+                />
+                <div class="formAgree">
+                  <input type="checkbox" id="check" required />
+                  <label for="check"
+                    >By clicking Sign Up, you agree to our
+                    <a
+                      href="https://www.facebook.com/legal/terms/update"
+                      target="_blank"
+                      >Terms,</a
+                    >
+                    <a
+                      href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0"
+                      target="_blank"
+                      >Privacy Policy</a
+                    >
+                    and
+                    <a
+                      href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0"
+                      target="_blank"
+                      >Cookies Policy</a
+                    >. You may receive SMS notifications from us and can opt out
+                    at any time.</label
+                  >
+                </div>
+                <button>Sign Up</button>
+                <span>Already have an account?</span>
+                <a href="login.html">Log In.</a>
+              </form>
+            </div>
+          </section>
+          <!-- Right section of body end -->
+
+        </div>
+      </main>
+    </div>
+    <!-- Body main container end -->
+  </body>
+</html>

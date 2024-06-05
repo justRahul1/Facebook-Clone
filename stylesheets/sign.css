@@ -1,0 +1,321 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: black;
+}
+
+:root {
+  --bgColor: #f0f2f5;
+  --blueTheme: #0866ff;
+  --greenTheme: #42b72a;
+  --darkText: #000;
+  --lightText: #808080a9;
+  --fontFam: sans-serif;
+}
+
+/* Body main container start  */
+.container {
+  width: 99.9%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.main {
+  width: 80%;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* left section of body start */
+.left {
+  width: 49%;
+  max-width: 600px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5em;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.leftImg {
+  width: 200px;
+  height: 80px;
+}
+
+.leftImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left > p {
+  font-size: 1.5rem;
+  margin: 0px;
+}
+/* Left section of body end */
+
+/* Right section of body start */
+.right {
+  width: 49%;
+  max-width: 600px;
+  min-height: 100%;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signFormMain {
+  width: 100%;
+  max-height: 900px;
+  background-color: #fff;
+  border: 1px solid var(--lightText);
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+}
+
+#signIn > h1 {
+  color: var(--darkText);
+}
+
+#signIn > h4 {
+  color: rgba(0, 0, 0, 0.664);
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+#signIn > i{
+  position: absolute;
+  right: 7%;
+  bottom: 43%;
+  cursor: pointer;
+}
+
+#signIn > hr {
+  margin-bottom: 10px;
+}
+
+#signIn > input {
+  border: 1px solid var(--lightText);
+  outline: none;
+  padding: 10px 5px;
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #f5f6f7;
+  width: 100%;
+}
+
+#signIn > input:focus {
+  border: 1px solid var(--blueTheme);
+}
+
+.username {
+  width: 100%;
+  display: flex;
+  margin: 10px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.username > input {
+  border: 1px solid var(--lightText);
+  outline: none;
+  padding: 10px 5px;
+  font-size: 1.2rem;
+  color: black;
+  border-radius: 4px;
+  background-color: #f5f6f7;
+}
+
+.username > input:focus {
+  border: 1px solid var(--blueTheme);
+}
+
+#frstName {
+  width: 49%;
+}
+
+#surName {
+  width: 49%;
+}
+
+.formAgree {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.formAgree > label {
+  color: black;
+  width: 90%;
+  cursor: pointer;
+}
+
+.formAgree > label > a{
+  color: var(--blueTheme);
+  text-decoration: none;
+}
+
+#signIn > button {
+  width: 100%;
+  padding: 10px 10px;
+  background-color: var(--greenTheme);
+  color: #fff;
+  outline: none;
+  font-size: 1.3rem;
+  border-style: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+#signIn > button:hover {
+  background-color: lightgreen;
+}
+
+#signIn > span {
+  color: var(--darkText);
+}
+
+#signIn > a {
+  color: var(--blueTheme);
+  word-break: none;
+}
+
+#errorName {
+  border: 1px solid red;
+  outline: none;
+  padding: 10px 5px;
+  font-size: 1.2rem;
+  color: black;
+  border-radius: 4px;
+  background-color: #f5f6f7;
+  width: 49%;
+}
+
+#sucessName {
+  border: 1px solid var(--greenTheme);
+  border-bottom: 2px solid var(--greenTheme);
+  outline: none;
+  padding: 10px 5px;
+  font-size: 1.2rem;
+  color: black;
+  border-radius: 4px;
+  background-color: #f5f6f7;
+  width: 49%;
+}
+/* Right section of body end */
+
+/* Responsiveness for small device start */
+@media only screen and (max-width: 700px) {
+ .main{
+  width: 99%;
+  justify-content: center;
+  padding: 5px;
+ }
+
+.left{
+  width: 45%;
+  padding-left: 5px;
+  padding-right: 5px;
+  gap: .2em;
+}
+
+ .leftImg{
+  width: 100px;
+  height: 30px;
+ }
+
+ .leftImg>img{
+  object-fit: contain;
+  object-position: left;
+ }
+
+ .left > p {
+  font-size: .8rem;
+  margin: 0px;
+}
+
+.right{
+  width: 55%;
+  padding: 20px 0px;
+}
+
+.signFormMain{
+  padding: 5px;
+}
+
+#signIn > h1{
+  font-size: 1rem;
+}
+
+#signIn > h4{
+  font-size: .8rem;
+  margin-bottom: 5px;
+}
+
+#signIn > i{
+  position: absolute;
+  right: 6%;
+  bottom: 51%;
+  font-size: .7rem;
+  cursor: pointer;
+}
+
+#signIn > hr {
+  margin-bottom: 5px;
+}
+
+#signIn > input{
+  padding: 3px 2px;
+  font-size: .8rem;
+  margin-bottom: 3px;
+}
+
+.username{
+  margin: 3px;
+}
+
+.username>input{
+  padding: 3px 2px;
+  font-size: .8rem;
+}
+
+.formAgree{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.formAgree > label{
+  font-size: .6rem;
+}
+
+#signIn > button{
+  padding: 5px 10px;
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+#signIn > span{
+  font-size: .6rem;
+}
+
+#signIn > a {
+  font-size: .7rem;
+}
+}
+/* Responsiveness for small device end */
